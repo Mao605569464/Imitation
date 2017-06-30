@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- 告诉搜索引擎你站点制作者的名字 -->
+    <meta name="Author" content="无笙" />
+    <!-- 网页关键字 -->
+     <meta name='Ketwords' content="HTML,烟雨风飘渺，无笙">
+    <!-- 网页描述 -->
+    <meta name="description" content="烟雨风飘渺是最新的前端自媒体，媒体人：无笙，定时分享前端最新的动态，定时分享前端教程">
+    <link rel="icon" href="./img/100du.ico" />
+    <title>渐变</title>
+    <style>
+        #div1{
+            width:200px;height: 200px;border: 1px solid #333;
+            background:-webkit-linear-gradient(top,#FFFFFF,#f8f8f8;    /*chrome内核前缀*/
+            background:-moz-linear-gradient(top,#FFFFFF,#f8f8f8);        /*firefox内核前缀*/
+            background:-ms-linear-gradient(top,#FFFFFF,#f8f8f8);         /*IE内核前缀*/
+            background:linear-gradient(top,#FFFFFF,#f8f8f8);  
+            /*IE9及以下不兼容*/
+            filter:progid:DXImageTransform.Microsoft.gradient(GradientType = 0, startColorstr = #FFFFFF, endColorstr = #f8f8f8);
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- 告诉搜索引擎你站点制作者的名字 -->
+    <meta name="Author" content="无笙" />
+    <!-- 网页关键字 -->
+     <meta name='Ketwords' content="HTML,烟雨风飘渺，无笙">
+    <!-- 网页描述 -->
+    <meta name="description" content="烟雨风飘渺是最新的前端自媒体，媒体人：无笙，定时分享前端最新的动态，定时分享前端教程">
+    <link rel="icon" href="./img/100du.ico" />
+    <title>IE6-7下浮动元素margin-bottom值失效的问题</title>
+    <style>
+        
+        /*清除浮动*/
+         .clear{zoom:1;}/*IE*/
+        .clear:after{content:'';display: block;clear: both;}/*标准浏览器*/
+        .wrap{padding-bottom:10px;}
+        #div1{width:100px;height: 100px;background: red;float: left;}
+        #div2{width: 200px;height: 100px;background: yellow;}
+    </style>
+</head>
+<body>
+<!-- <style>
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+
+.wrap { padding-bottom:10px; }
+
+#div1 { width:100px; height:100px; background:red; float:left; }
+
+#div2 { width:200px; height:100px; background:yellow; }
+</style> -->
+
+
+
+<div class="wrap clear">
+    <div id="div1"></div>
+</div>
+
+<div id="div2"></div>
+    
+<!--     <div class="wrap clear">
+        <div id="div1"></div>
+    </div>
+    <div id="div2"></div> -->
+</body>
+</html>
